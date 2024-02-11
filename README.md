@@ -21,13 +21,13 @@ Simplify your ROS Docker experience with these key features:
 
 Start your container effortlessly:
 
-```
+```bash
 docker compose up
 ```
 
 Connect to the container's console:
 
-```
+```bash
 docker exec -it humble kitty
 ```
 
@@ -35,22 +35,24 @@ docker exec -it humble kitty
 
 In one terminal, execute:
 
-```
+```bash
 ros2 run turtlesim turtlesim_node
 ```
 
 In another, run:
 
-```
+```bash
 ros2 run turtlesim turtle_teleop_key
 ```
 
-With the second terminal active, control the turtle using arrow keys in a new window. <br>
+With the second terminal active, control the turtle using arrow keys in a new window.
 
 For further instructions, refer to the official [ROS 2 Humble Wiki](https://docs.ros.org/en/humble/index.html).
 
 ### Tests
+
 Tested with
+
 - above turtlebot hello world
 - [Ros C++ and Python Demos](https://github.com/ros2/demos/tree/humble)
 
