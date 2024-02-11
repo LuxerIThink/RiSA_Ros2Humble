@@ -1,12 +1,6 @@
-# Ros Docker Template
+# Ros 2 Humble Docker Template
 
-This repository offers an easily deployable ROS Docker Template, streamlining your ROS development environment setup.
-
-## Available branches
-
-Choose from the following branches based on your ROS version needs:
-
-- ROS 2 Humble
+This repository offers an easily deployable ROS 2 Humble Docker Template, streamlining your ROS development environment setup.
 
 ## Key features
 
@@ -16,7 +10,7 @@ Simplify your ROS Docker experience with these key features:
 - Centralized management of apt-get packages in `packages.txt`
 - Convenient management of Python libraries in `requirements.txt`
 - Predefined workspace folder
-- Automated building of C++ packages
+- Automated build of C++ packages when building container
 - ROS pre-sourced for immediate use
 - Helpful ROS command hints provided
 - Fix for not showing ros windows: `fix_display.sh`
@@ -34,7 +28,7 @@ docker compose up
 Connect to the container's console:
 
 ```
-docker exec ros2humble kitty
+docker exec -it humble kitty
 ```
 
 ### ROS 2 Hello World
@@ -55,9 +49,14 @@ With the second terminal active, control the turtle using arrow keys in a new wi
 
 For further instructions, refer to the official [ROS 2 Humble Wiki](https://docs.ros.org/en/humble/index.html).
 
+### Tests
+Tested with
+- above turtlebot hello world
+- [Ros C++ and Python Demos](https://github.com/ros2/demos/tree/humble)
+
 ### Quick docker tips
 
-*(primarily for kitty/linux shortcuts)*
+primarily for kitty/linux shortcuts
 
 Leave from container:
 
@@ -77,11 +76,11 @@ Open a new tab:
 
 Switch tabs:
 
-<kbd> <br> CTRL <br> </kbd> + <kbd> <br> SHIFT <br> </kbd> + <kbd> <br> -> <br> </kbd>
+<kbd> <br> CTRL <br> </kbd> + <kbd> <br> SHIFT <br> </kbd> + <kbd> <br> → <br> </kbd>
 
 or
 
-<kbd> <br> CTRL <br> </kbd> + <kbd> <br> SHIFT <br> </kbd> + <kbd> <br> <- <br> </kbd>
+<kbd> <br> CTRL <br> </kbd> + <kbd> <br> SHIFT <br> </kbd> + <kbd> <br> ← <br> </kbd>
 
 ### Purpose
 
