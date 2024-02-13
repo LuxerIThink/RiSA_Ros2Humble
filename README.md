@@ -1,6 +1,12 @@
-# Ros 2 Humble Docker Template
+# Ros Docker Template
 
-This repository offers an easily deployable ROS 2 Humble Docker Template, streamlining your ROS development environment setup.
+This repository offers an easily deployable ROS Docker Template, streamlining your ROS development environment setup.
+
+## Supported Ros Versions (branches)
+
+- Ros 2 Humble
+- Ros 2 Foxy
+- Ros 1 Noetic
 
 ## Key features
 
@@ -30,31 +36,6 @@ Connect to the container's console:
 ```bash
 docker exec -it humble kitty
 ```
-
-### ROS 2 Hello World
-
-In one terminal, execute:
-
-```bash
-ros2 run turtlesim turtlesim_node
-```
-
-In another, run:
-
-```bash
-ros2 run turtlesim turtle_teleop_key
-```
-
-With the second terminal active, control the turtle using arrow keys in a new window.
-
-For further instructions, refer to the official [ROS 2 Humble Wiki](https://docs.ros.org/en/humble/index.html).
-
-### Tests
-
-Tested with
-
-- above turtlebot hello world
-- [Ros C++ and Python Demos](https://github.com/ros2/demos/tree/humble)
 
 ### Quick docker tips
 
